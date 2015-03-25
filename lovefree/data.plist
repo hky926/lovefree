@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>CLASSNAME</key>
+		<string>KYListViewController</string>
+		<key>TYPE</key>
+		<integer>1</integer>
+		<key>IMAGE</key>
+		<string>tabbar_limitfree</string>
+		<key>TITLE</key>
+		<string>限免</string>
+		<key>URL</key>
+		<string>http://iappfree.candou.com: ControllerData8080/free/applications/limited?currency=rmb&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>CLASSNAME</key>
+		<string>KYListViewController</string>
+		<key>TYPE</key>
+		<integer>2</integer>
+		<key>IMAGE</key>
+		<string>tabbar_reduceprice</string>
+		<key>TITLE</key>
+		<string>降价</string>
+		<key>URL</key>
+		<string>http://iappfree.candou.com: ControllerData8080/free/applications/limited?currency=rmb&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>CLASSNAME</key>
+		<string>KYListViewController</string>
+		<key>TYPE</key>
+		<integer>3</integer>
+		<key>IMAGE</key>
+		<string>tabbar_appfree</string>
+		<key>TITLE</key>
+		<string>免费</string>
+		<key>URL</key>
+		<string>http://iappfree.candou.com: ControllerData8080/free/applications/limited?currency=rmb&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>CLASSNAME</key>
+		<string></string>
+		<key>TYPE</key>
+		<integer>1</integer>
+		<key>IMAGE</key>
+		<string>tabbar_subject</string>
+		<key>TITLE</key>
+		<string>专题</string>
+		<key>URL</key>
+		<string>http://iappfree.candou.com: ControllerData8080/free/applications/limited?currency=rmb&amp;page=%d</string>
+	</dict>
+	<dict>
+		<key>CLASSNAME</key>
+		<string>KYListViewController</string>
+		<key>TYPE</key>
+		<integer>4</integer>
+		<key>IMAGE</key>
+		<string>tabbar_rank</string>
+		<key>TITLE</key>
+		<string>热榜</string>
+		<key>URL</key>
+		<string>http://iappfree.candou.com: ControllerData8080/free/applications/limited?currency=rmb&amp;page=%d</string>
+	</dict>
+</array>
+</plist>
