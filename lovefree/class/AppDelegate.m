@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KYBaseViewController.h"
-
+#import "LimetTime.h"
 @interface AppDelegate ()
 
 @end
@@ -43,8 +43,7 @@
     
     self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyAndVisible];
-    
-    
+//    [LimetTime culLimetTime:@"123"];
     return YES;
 }
 

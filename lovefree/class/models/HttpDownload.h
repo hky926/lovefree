@@ -12,7 +12,7 @@
 {
     NSURLConnection *_httpConnection;
 }
-@property(nonatomic,copy) id deleage;
+@property(nonatomic,strong) id deleage;
 @property(nonatomic,assign) SEL method;
 @property(nonatomic,copy) NSMutableData *downloadData;
 @property(nonatomic,assign) NSInteger type;

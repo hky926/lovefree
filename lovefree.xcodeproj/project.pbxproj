@@ -10,7 +10,6 @@
 		811B33141AC24C65000FCBEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B33131AC24C65000FCBEC /* main.m */; };
 		811B332E1AC24C65000FCBEC /* lovefreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B332D1AC24C65000FCBEC /* lovefreeTests.m */; };
 		811B334E1AC256E8000FCBEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B33481AC256E8000FCBEC /* AppDelegate.m */; };
-		811B334F1AC256E8000FCBEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B334B1AC256E8000FCBEC /* ViewController.m */; };
 		811B33541AC2583C000FCBEC /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 811B33531AC2583C000FCBEC /* data.plist */; };
 		811B33E71AC25B49000FCBEC /* account_candou.png in Resources */ = {isa = PBXBuildFile; fileRef = 811B33571AC25B49000FCBEC /* account_candou.png */; };
 		811B33E81AC25B49000FCBEC /* account_candou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 811B33581AC25B49000FCBEC /* account_candou@2x.png */; };
@@ -162,6 +161,7 @@
 		815D8DE41AC2846F00C1DB37 /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE31AC2846F00C1DB37 /* StartView.m */; };
 		815D8DE71AC2AEA300C1DB37 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE61AC2AEA300C1DB37 /* HttpManager.m */; };
 		815D8DEA1AC2AED400C1DB37 /* HttpDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE91AC2AED400C1DB37 /* HttpDownload.m */; };
+		817F2C6B1AC3FBCC00553415 /* LimetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 817F2C6A1AC3FBCC00553415 /* LimetTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,8 +183,6 @@
 		811B332D1AC24C65000FCBEC /* lovefreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lovefreeTests.m; sourceTree = "<group>"; };
 		811B33471AC256E8000FCBEC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		811B33481AC256E8000FCBEC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		811B334A1AC256E8000FCBEC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		811B334B1AC256E8000FCBEC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		811B33531AC2583C000FCBEC /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		811B33571AC25B49000FCBEC /* account_candou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account_candou.png; sourceTree = "<group>"; };
 		811B33581AC25B49000FCBEC /* account_candou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account_candou@2x.png"; sourceTree = "<group>"; };
@@ -345,6 +343,8 @@
 		815D8DE61AC2AEA300C1DB37 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		815D8DE81AC2AED400C1DB37 /* HttpDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownload.h; sourceTree = "<group>"; };
 		815D8DE91AC2AED400C1DB37 /* HttpDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDownload.m; sourceTree = "<group>"; };
+		817F2C691AC3FBCC00553415 /* LimetTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimetTime.h; sourceTree = "<group>"; };
+		817F2C6A1AC3FBCC00553415 /* LimetTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LimetTime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,8 +436,6 @@
 		811B33491AC256E8000FCBEC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				811B334A1AC256E8000FCBEC /* ViewController.h */,
-				811B334B1AC256E8000FCBEC /* ViewController.m */,
 				811B34A91AC262F4000FCBEC /* KYBaseViewController.h */,
 				811B34AA1AC262F4000FCBEC /* KYBaseViewController.m */,
 				811B34AF1AC268EB000FCBEC /* KYListViewController.h */,
@@ -457,6 +455,8 @@
 				815D8DE61AC2AEA300C1DB37 /* HttpManager.m */,
 				815D8DE81AC2AED400C1DB37 /* HttpDownload.h */,
 				815D8DE91AC2AED400C1DB37 /* HttpDownload.m */,
+				817F2C691AC3FBCC00553415 /* LimetTime.h */,
+				817F2C6A1AC3FBCC00553415 /* LimetTime.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -926,7 +926,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				811B34B11AC268EB000FCBEC /* KYListViewController.m in Sources */,
-				811B334F1AC256E8000FCBEC /* ViewController.m in Sources */,
 				815D8DEA1AC2AED400C1DB37 /* HttpDownload.m in Sources */,
 				811B334E1AC256E8000FCBEC /* AppDelegate.m in Sources */,
 				811B33141AC24C65000FCBEC /* main.m in Sources */,
@@ -935,6 +934,7 @@
 				815D8DE01AC2810D00C1DB37 /* AppItemTableViewCell.m in Sources */,
 				811B34AB1AC262F4000FCBEC /* KYBaseViewController.m in Sources */,
 				811B34B41AC26966000FCBEC /* KYDetailViewController.m in Sources */,
+				817F2C6B1AC3FBCC00553415 /* LimetTime.m in Sources */,
 				815D8DDC1AC27EAE00C1DB37 /* AppItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

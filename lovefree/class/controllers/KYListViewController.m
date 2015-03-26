@@ -34,7 +34,9 @@
     [self.view addGestureRecognizer:tap];
     [tap addTarget:self action:@selector(tap)];
     
-    NSString *url = [dataDic objectForKey:@"URL"];
+    NSString *url = [NSString stringWithFormat:[dataDic objectForKey:@"URL"],1];
+    
+    [[HttpManager shardManger] addDownload:url type:[[dataDic objectForKey:@"TYPE"] intValue]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updataData:) name:url object:nil];
     
 //    [[HttpManager shardManger] addDownload:url type:LIMIT_TYPE];
@@ -57,9 +59,10 @@
 }
 -(void) updataData:(NSNotification *)notification
 {
-    NSLog(@"data updat:%@",notification.name);
+//    NSLog(@"data updat:%@",notification.name);
     _dataArray = [[HttpManager shardManger] objectForKey:notification.name];
     [_tableView reloadData];
+//    NSLog(@"DataArray:%d",[_dataArray count]);
 }
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -72,6 +75,9 @@
     if (cell == nil) {
         cell = [[NSBundle mainBundle]loadNibNamed:@"AppItemTableViewCell" owner:self options:nil][0];
     }
+    AppItem *item = _dataArray[indexPath.row];
+     NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:item.iconUrl]] returningResponse:nil error:nil];
+    cell.appImageView.image = [UIImage imageWithData:data];
     [cell reflsh:_dataArray[indexPath.row]];
     return cell;
 }

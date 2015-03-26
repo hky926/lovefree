@@ -8,8 +8,10 @@
 
 #import "HttpManager.h"
 #import "AppItem.h"
+#import "LimetTime.h"
 
 @implementation HttpManager
+
 +(HttpManager *)shardManger
 {
     static HttpManager *httpManager = nil;
@@ -18,6 +20,7 @@
     }
     return httpManager;
 }
+
 - (instancetype)init
 {
     self = [super init];
@@ -27,11 +30,13 @@
     }
     return self;
 }
+
 -(void)addDownload:(NSString *)url type:(NSInteger) type
 {
     HttpDownload *hd = [_taskDict objectForKey:url];
     if (!hd) {
         HttpDownload *hd = [[HttpDownload alloc] init];
+        hd.httpUrl = url;
         hd.type = type;
         hd.deleage = self;
         hd.method = @selector(downloadComple:);
@@ -53,7 +58,15 @@
         case LIMIT_TYPE:
             [self pariseList:hd];
             break;
-            
+        case REDUCE_TYPE:
+            [self pariseList:hd];
+            break;
+        case FREE_TYPE:
+            [self pariseList:hd];
+            break;
+        case RANK_TYPE:
+            [self pariseList:hd];
+            break;
         default:
             break;
     }
@@ -62,7 +75,8 @@
 
 -(void) pariseList:(HttpDownload *)hd
 {
-    NSDictionary * dic = [self jsonObjectFromObject:hd];
+    NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:hd.downloadData options:NSJSONReadingMutableContainers error:nil];
+    
     NSMutableArray *appItemArray = [[NSMutableArray alloc] init];
     if (dic) {
         NSArray *array  = [dic objectForKey:@"applications"];
@@ -89,12 +103,12 @@
             appItem.downloads      = appDic[@"downloads"];
             appItem.favorites      = appDic[@"favorites"];
             appItem.shares         = appDic[@"shares"];
-            appItem.expireDatetime = appDic[@"expireDatetime"];
             appItem.iconUrl        = appDic[@"iconUrl"];
             appItem.name           = appDic[@"name"];
             appItem.lastPrice      = appDic[@"lastPrice"];
             appItem.starOverall    = appDic[@"starOverall"];
             appItem.currentPrice   = appDic[@"currentPrice"];
+            appItem.expireDatetime = [LimetTime culLimetTime:appDic[@"expireDatetime"]];
             [appItemArray addObject:appItem];
         }
         [_restultDict setObject:appItemArray forKey:hd.httpUrl];
@@ -102,6 +116,7 @@
 }
 -(NSDictionary *) jsonObjectFromObject:(HttpDownload *)hd
 {
-    return nil;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:hd.downloadData options:NSJSONReadingMutableContainers error:nil];
+    return dic;
 }
 @end

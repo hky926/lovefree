@@ -10,23 +10,27 @@
 
 @implementation HttpDownload
 
-
 -(void) downLoadFromUrl:(NSString *)url
 {
     _httpConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]] delegate:self];
+    _downloadData = [[NSMutableData alloc] init];
 }
+
 -(void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [self.downloadData setLength:0];
 }
+
 -(void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.downloadData appendData:data];
 }
+
 -(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-   
+    NSLog(@"downlog error");
 }
+
 -(void) connectionDidFinishLoading:(NSURLConnection *)connection
 {
     if ([self.deleage respondsToSelector:self.method]) {
