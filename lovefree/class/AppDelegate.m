@@ -18,6 +18,8 @@
 -(void) createTabControl
 {
     UITabBarController *tabController = [[UITabBarController alloc] init];
+    tabController.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    
     NSMutableArray *controlArray = [[NSMutableArray alloc] init];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"];
     NSArray *fileData = [NSArray arrayWithContentsOfFile:filePath];

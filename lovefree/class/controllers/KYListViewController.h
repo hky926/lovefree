@@ -8,6 +8,11 @@
 
 #import "KYBaseViewController.h"
 
-@interface KYListViewController : KYBaseViewController
-
+@interface KYListViewController : KYBaseViewController<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *_tableView;
+    NSMutableArray *_dataArray;
+    UISearchBar *_searchBar;
+    UISearchController *_searchController;
+}
 @end

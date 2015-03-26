@@ -156,6 +156,12 @@
 		811B34AB1AC262F4000FCBEC /* KYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B34AA1AC262F4000FCBEC /* KYBaseViewController.m */; };
 		811B34B11AC268EB000FCBEC /* KYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B34B01AC268EB000FCBEC /* KYListViewController.m */; };
 		811B34B41AC26966000FCBEC /* KYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B34B31AC26966000FCBEC /* KYDetailViewController.m */; };
+		815D8DDC1AC27EAE00C1DB37 /* AppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DDB1AC27EAE00C1DB37 /* AppItem.m */; };
+		815D8DE01AC2810D00C1DB37 /* AppItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DDE1AC2810D00C1DB37 /* AppItemTableViewCell.m */; };
+		815D8DE11AC2810D00C1DB37 /* AppItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815D8DDF1AC2810D00C1DB37 /* AppItemTableViewCell.xib */; };
+		815D8DE41AC2846F00C1DB37 /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE31AC2846F00C1DB37 /* StartView.m */; };
+		815D8DE71AC2AEA300C1DB37 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE61AC2AEA300C1DB37 /* HttpManager.m */; };
+		815D8DEA1AC2AED400C1DB37 /* HttpDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D8DE91AC2AED400C1DB37 /* HttpDownload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +333,18 @@
 		811B34B01AC268EB000FCBEC /* KYListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYListViewController.m; sourceTree = "<group>"; };
 		811B34B21AC26966000FCBEC /* KYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDetailViewController.h; sourceTree = "<group>"; };
 		811B34B31AC26966000FCBEC /* KYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDetailViewController.m; sourceTree = "<group>"; };
+		815D8DD41AC27C1A00C1DB37 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		815D8DDA1AC27EAE00C1DB37 /* AppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppItem.h; sourceTree = "<group>"; };
+		815D8DDB1AC27EAE00C1DB37 /* AppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppItem.m; sourceTree = "<group>"; };
+		815D8DDD1AC2810D00C1DB37 /* AppItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppItemTableViewCell.h; sourceTree = "<group>"; };
+		815D8DDE1AC2810D00C1DB37 /* AppItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppItemTableViewCell.m; sourceTree = "<group>"; };
+		815D8DDF1AC2810D00C1DB37 /* AppItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppItemTableViewCell.xib; sourceTree = "<group>"; };
+		815D8DE21AC2846F00C1DB37 /* StartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartView.h; sourceTree = "<group>"; };
+		815D8DE31AC2846F00C1DB37 /* StartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartView.m; sourceTree = "<group>"; };
+		815D8DE51AC2AEA300C1DB37 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		815D8DE61AC2AEA300C1DB37 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		815D8DE81AC2AED400C1DB37 /* HttpDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownload.h; sourceTree = "<group>"; };
+		815D8DE91AC2AED400C1DB37 /* HttpDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDownload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +399,7 @@
 				811B33121AC24C65000FCBEC /* Info.plist */,
 				811B33131AC24C65000FCBEC /* main.m */,
 				811B33531AC2583C000FCBEC /* data.plist */,
+				815D8DD41AC27C1A00C1DB37 /* common.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -432,6 +451,12 @@
 		811B334C1AC256E8000FCBEC /* models */ = {
 			isa = PBXGroup;
 			children = (
+				815D8DDA1AC27EAE00C1DB37 /* AppItem.h */,
+				815D8DDB1AC27EAE00C1DB37 /* AppItem.m */,
+				815D8DE51AC2AEA300C1DB37 /* HttpManager.h */,
+				815D8DE61AC2AEA300C1DB37 /* HttpManager.m */,
+				815D8DE81AC2AED400C1DB37 /* HttpDownload.h */,
+				815D8DE91AC2AED400C1DB37 /* HttpDownload.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -439,6 +464,11 @@
 		811B334D1AC256E8000FCBEC /* views */ = {
 			isa = PBXGroup;
 			children = (
+				815D8DDD1AC2810D00C1DB37 /* AppItemTableViewCell.h */,
+				815D8DDE1AC2810D00C1DB37 /* AppItemTableViewCell.m */,
+				815D8DDF1AC2810D00C1DB37 /* AppItemTableViewCell.xib */,
+				815D8DE21AC2846F00C1DB37 /* StartView.h */,
+				815D8DE31AC2846F00C1DB37 /* StartView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -756,6 +786,7 @@
 				811B340E1AC25B49000FCBEC /* category_Pastime.jpg in Resources */,
 				811B33F51AC25B49000FCBEC /* account_user.png in Resources */,
 				811B342D1AC25B49000FCBEC /* composedingwei@2x.png in Resources */,
+				815D8DE11AC2810D00C1DB37 /* AppItemTableViewCell.xib in Resources */,
 				811B340B1AC25B49000FCBEC /* category_Medical.jpg in Resources */,
 				811B341C1AC25B49000FCBEC /* appproduct_searchbar.png in Resources */,
 				811B34031AC25B49000FCBEC /* category_Catalogs.jpg in Resources */,
@@ -896,10 +927,15 @@
 			files = (
 				811B34B11AC268EB000FCBEC /* KYListViewController.m in Sources */,
 				811B334F1AC256E8000FCBEC /* ViewController.m in Sources */,
+				815D8DEA1AC2AED400C1DB37 /* HttpDownload.m in Sources */,
 				811B334E1AC256E8000FCBEC /* AppDelegate.m in Sources */,
 				811B33141AC24C65000FCBEC /* main.m in Sources */,
+				815D8DE41AC2846F00C1DB37 /* StartView.m in Sources */,
+				815D8DE71AC2AEA300C1DB37 /* HttpManager.m in Sources */,
+				815D8DE01AC2810D00C1DB37 /* AppItemTableViewCell.m in Sources */,
 				811B34AB1AC262F4000FCBEC /* KYBaseViewController.m in Sources */,
 				811B34B41AC26966000FCBEC /* KYDetailViewController.m in Sources */,
+				815D8DDC1AC27EAE00C1DB37 /* AppItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

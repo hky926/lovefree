@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "common.h"
 
 @interface KYBaseViewController : UIViewController
+{
+    NSDictionary *dataDic;
+}
 -(id) initWithDic:(NSDictionary *)dic;
+-(void) addItem:(NSString *)title position:(NSInteger)pos method:(SEL)method imageName:(NSString *)name;
 @end

@@ -40,7 +40,7 @@
 	</dict>
 	<dict>
 		<key>CLASSNAME</key>
-		<string></string>
+		<string>KYListViewController</string>
 		<key>TYPE</key>
 		<integer>1</integer>
 		<key>IMAGE</key>
